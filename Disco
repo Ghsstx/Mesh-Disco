@@ -1,0 +1,23 @@
+plr = game.Players.LocalPlayer.Name
+meshes = {"Brick","Cylinder","Head","Sphere","Torso","Wedge"}
+h = game.Workspace[plr].Head.Mesh
+t = Instance.new("SpecialMesh",game.Workspace[plr].Torso)
+la = Instance.new("SpecialMesh",game.Workspace[plr]["Left Arm"])
+ra = Instance.new("SpecialMesh",game.Workspace[plr]["Right Arm"])
+ll = Instance.new("SpecialMesh",game.Workspace[plr]["Left Leg"])
+rl = Instance.new("SpecialMesh",game.Workspace[plr]["Right Leg"])
+while true do
+wait(0.1)
+h.MeshType = meshes[math.random(1,#meshes)]
+h.Parent.BrickColor = BrickColor.Random()
+t.MeshType = meshes[math.random(1,#meshes)]
+t.Parent.BrickColor = BrickColor.Random()
+la.MeshType = meshes[math.random(1,#meshes)]
+la.Parent.BrickColor = BrickColor.Random()
+ra.MeshType = meshes[math.random(1,#meshes)]
+ra.Parent.BrickColor = BrickColor.Random()
+ll.MeshType = meshes[math.random(1,#meshes)]
+ll.Parent.BrickColor = BrickColor.Random()
+rl.MeshType = meshes[math.random(1,#meshes)]
+rl.Parent.BrickColor = BrickColor.Random()
+end
